@@ -18,15 +18,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'snipMate'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'taglist.vim'
 Plugin 'The-NERD-tree'
-Plugin 'molokai'
-Plugin 'AutoComplPop'
 Plugin 'Mustang2'
-Plugin 'Solarized'
-Plugin 'jellybeans.vim'
-Plugin 'bling/vim-airline'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
@@ -39,7 +35,7 @@ set cindent
 " Colorscheme
 syntax enable
 set t_Co=256
-colorscheme jellybeans
+colorscheme Mustang
 
 " Tabs and spaces
 set tabstop=4
@@ -97,6 +93,3 @@ if has("gui_win32")
     set guifont=Consolas:h11:cANSI
 endif
 
-" Vim airline
-let g:airline_section_b = '%{strftime("%c")}'
-let g:airline_section_y = 'BN: %{bufnr("%")}'
