@@ -23,6 +23,7 @@ Plugin 'taglist.vim'
 Plugin 'The-NERD-tree'
 Plugin 'Mustang2'
 Plugin 'itchyny/lightline.vim'
+Plugin 'jade.vim'
 
 call vundle#end()
 
@@ -79,6 +80,9 @@ map <C-g>l :TlistToggle <CR>
 " NerdTree
 map <C-g>n :NERDTreeToggle <CR>
 let NERDTreeHijackNetrw = 0
+
+" Jade
+autocmd Filetype jade setlocal ts=2 sts=2 sw=2
 
 " Automatic session load
 if filereadable("session.vim")
